@@ -12,15 +12,15 @@
                 Text="아이디" 
                 Grid.Row="1" />
             
-            <Label 
-                Text="비밀번호" 
-                Grid.Row="2" />
-            
             <Editor 
                 x:Name="id_textbox" 
                 IsTextPredictionEnabled="false"
                 IsSpellCheckEnabled="false"  
                 AutoSize="TextChanges"
+                Grid.Row="2" />
+
+            <Label 
+                Text="비밀번호" 
                 Grid.Row="3" />
 
             <Editor 
