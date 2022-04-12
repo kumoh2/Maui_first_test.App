@@ -4,53 +4,62 @@
              x:Class="Maui_first_test.LoginPage"
              Title="LoginPage"
              BackgroundColor="White">
-    <ScrollView>
-        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
-              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+    <Grid 
+            RowSpacing="25"
+            ColumnSpacing="5"
+            RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+            ColumnDefinitions="Auto,Auto"
+            Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
 
-            <Label
+        <Label
                 Text="아이디" 
-                Grid.Row="1" />
-            
-            <Editor 
+                Grid.Row="1"/>
+
+        <Editor 
                 x:Name="id_textbox" 
                 IsTextPredictionEnabled="false"
                 IsSpellCheckEnabled="false"  
                 AutoSize="TextChanges"
+                Grid.Row="1"
+                Grid.Column="2"/>
+
+        <Label 
+                Text="비밀번호" 
                 Grid.Row="2" />
 
-            <Label 
-                Text="비밀번호" 
-                Grid.Row="3" />
-
-            <Editor 
+        <Editor 
                 x:Name="pw_textbox"  
                 IsTextPredictionEnabled="false"
                 IsSpellCheckEnabled="false" 
                 AutoSize="TextChanges"
-                Grid.Row="4"/>
-            
-            <Button 
+                Grid.Row="2"
+                Grid.Column="2"/>
+
+        <Button 
                 Text="로그인" 
                 Clicked="Login_Button_Click"
-                Grid.Row="5" />
-            
-            <Button 
+                Grid.Row="5"
+                Grid.ColumnSpan="2" />
+
+        <Button 
                 Text="회원가입" 
-                Grid.Row="6" />
-            
-            <Button 
+                Grid.Row="6"
+                Grid.ColumnSpan="2" />
+
+        <Button 
                 Text="비밀번호찾기" 
-                 Grid.Row="7" />
-            
-            <Button 
+                 Grid.Row="7"
+                Grid.ColumnSpan="2" />
+
+        <Button 
                 Text="접속테스트" 
-                Grid.Row="8" />
-            
-            <Button 
+                Grid.Row="8"
+                Grid.ColumnSpan="2" />
+
+        <Button 
                 Text="종료" 
                 Clicked="Exit_Button_Click"
-                Grid.Row="9" />
-        </Grid>
-    </ScrollView>
+                Grid.Row="9"
+                Grid.ColumnSpan="3" />
+    </Grid>
 </ContentPage>
