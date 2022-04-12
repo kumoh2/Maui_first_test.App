@@ -18,10 +18,16 @@
             
             <Editor 
                 x:Name="id_textbox" 
+                IsTextPredictionEnabled="false"
+                IsSpellCheckEnabled="false" 
+                AutoSize="TextChanges"
                 Grid.Row="3" />
 
             <Editor 
                 x:Name="pw_textbox"  
+                IsTextPredictionEnabled="false"
+                IsSpellCheckEnabled="false" 
+                AutoSize="TextChanges"
                 Grid.Row="4"/>
             
             <Button 
