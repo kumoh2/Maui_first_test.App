@@ -19,7 +19,7 @@
             <Editor 
                 x:Name="id_textbox" 
                 IsTextPredictionEnabled="false"
-                IsSpellCheckEnabled="false" 
+                IsSpellCheckEnabled="false"  
                 AutoSize="TextChanges"
                 Grid.Row="3" />
 
