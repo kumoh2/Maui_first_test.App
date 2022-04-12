@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_first_test.LoginPage"
+             Title="LoginPage"
+             BackgroundColor="White">
+    <ScrollView>
+        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
+              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+
+            <Label Text="아이디" 
+                   Grid.Row="0" />
+            <Label Text="비밀번호" 
+                   Grid.Row="1" />
+          <!--  <TextBox x:Name="id_textbox" Margin="106,14,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.567" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="135"/>
+            <PasswordBox x:Name="pw_textbox" Margin="106,52,0,0" RenderTransformOrigin="0.5,0.567" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="135"/> -->
+            <Button Text="로그인" 
+                    Clicked="Login_Button_Click"
+                    Grid.Row="2" />
+            <Button Text="회원가입" 
+                    Grid.Row="3" />
+            <Button Text="비밀번호찾기" 
+                    Grid.Row="4" />
+            <Button Text="접속테스트" 
+                    Grid.Row="5" />
+            <Button Text="종료" 
+                    Clicked="Exit_Button_Click"
+                    Grid.Row="6" />
+        </Grid>
+    </ScrollView>
+</ContentPage>
